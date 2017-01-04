@@ -1,0 +1,24 @@
+@import "variables";
+
+@mixin fontFace($name, $font-name: 0){
+	@font-face {
+		@if $font-name != 0 {
+			font-family: $font-name;
+		} @else {
+			font-family: $name;
+		}
+		src: url("../fonts/" + $name + "/" + $name + ".eot");
+		src: url("../fonts/" + $name + "/" + $name + ".eot?#iefix")format("embedded-opentype"),
+		url("../fonts/" + $name + "/" + $name + ".woff") format("woff"),
+		url("../fonts/" + $name + "/" + $name + ".ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+}
+
+@function em($target, $context: $fsBase) {
+	@if $target == 0 {
+		@return 0
+	}
+	@return $target / $context + 0em;
+}
