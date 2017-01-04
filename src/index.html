@@ -1,3 +1,54 @@
 @@include('template/header.html', {"link" : "index.css"})
-Content
+<div class="content--top">
+    <div class="tabs-top">
+        <ul class="nav nav-tabs">
+            <li><a href="#all" data-target="tab">Все новости</a></li>
+            <li><a href="#popular" data-target="tab">Популярные</a></li>
+            <li><a href="#discussed" data-target="tab">Обсуждаемые</a></li>
+        </ul>
+    </div>
+    <div class="clearfix">
+        <div class="column-center col-sm-9">
+            <div class="tab-content">
+                @@include('template/news.html', {"id" : "all"})
+                @@include('template/news.html', {"id" : "popular"})
+                @@include('template/news.html', {"id" : "discussed"})
+            </div>
+            <div class="b-bottom">
+                <img src="img/b/under.jpg" alt="img under">
+                <img src="img/b/under.jpg" alt="img under">
+                <img src="img/b/under.jpg" alt="img under">
+            </div>
+        </div>
+        <div class="column-right col-sm-3">
+            <div class="b-right"><img src="img/b/right_1.jpg" alt="right image"></div>
+            <div class="b-right"><img src="img/b/right_2.jpg" alt="right image"></div>
+        </div>
+    </div>
+</div> <!-- content--top #END -->
+<div class="content--bottom">
+    <div class="comments-block">
+        <p class="comments--total">32 комментария</p>
+        <ul class="comments--list">
+            @@for (var i = 0; i < 5; i++) {
+                <li class="comments--item">
+                    <div class="comments--icon"><i class="user-icon icon"></i></div>
+                    <div class="comments--text">
+                        <p class="comments--text-title">Макс Петров<span class="comments--text-time"></span></p>
+                        <p class="comments--text-comment">На фоне электромобиля гибридный Ioniq не столь азартен. Нет,
+                            рулится он даже лучше, легче проходит повороты, но гибридная силовая установка ничего не может
+                            противопоставить <a href="#" class="more-link">(...)</a></p>
+                    </div>
+                </li>
+            }
+        </ul>
+        <button class="btn btn-default comments--more">Показать еще</button>
+        <form action="#" class="comments--form">
+            <div class="form-group">
+                <input type="text" class="comments--input">
+                <i class="icon icon-paper-plane"></i>
+            </div>
+        </form>
+    </div>
+</div>
 @@include('template/footer.html', {"src" : false})
