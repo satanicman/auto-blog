@@ -1,16 +1,27 @@
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 // font
-$ffBase: '';
-$ffTitleMain: '';
-$ffTitleSub: '';
+$ffBase: 'Roboto Regular', serif;
+$ffTitleMain: 'Roboto Bold', serif;
+$ffTitleSub: 'Roboto Black', serif;
 $fsBase: 16px;
 // background
-$bgBase: '';
+$bgBase: #efefef;
+$bgLight: #fff;
+$bgBlue: #1A73A1;
 // border
-$bdBaseColor: '';
-$bdBase: $bdBaseColor;
+$bdBaseColor: #ccc;
+$bdDarkColor: #000;
+$bdLightColor: #fff;
+$bdGreyColor: #bbb;
+$bdGreyColor-l: #E7E7E7;
+$bdGreyColor-d: #999;
+$bdBase: 1px solid $bdBaseColor;
 //color
-$cBase: '';
-$cTitleMain: '';
-$cTitleSub: '';
+$cBase: #333;
+$cLight: #fff;
 $cRed: red;
+$cBlue: #06C;
+$cBlue-l: #2196F3;
+$cGrey: #666;
+$cGrey-l: #86939E;
+$cPlaceholder: #999;

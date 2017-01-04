@@ -4,6 +4,7 @@
 @import "../../bower_components/pg-css-reset/dist/pg-reset.css";
 @import "../../bower_components/normalize.css/normalize.css";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome";
 
 /*
 * Custom
@@ -25,18 +26,23 @@ a {
 	color: $cBase;
 }
 
+input, textarea {
+	&::-webkit-input-placeholder {color: $cPlaceholder;}
+	&::-moz-placeholder          {color: $cPlaceholder;}
+	&:-moz-placeholder           {color: $cPlaceholder;}
+	&:-ms-input-placeholder      {color: $cPlaceholder;}
+}
+
 .title {
 	font-weight: 700;
 	line-height: 1;
 	padding: 0;
 	margin: 0;
 	&--main {
-		color: $cTitleMain;
 		font-family: $ffTitleMain;
 		font-size: em(24px);
 	}
 	&--sub {
-		color: $cTitleSub;
 		font-family: $ffTitleSub;
 		font-size: em(20px);
 	}

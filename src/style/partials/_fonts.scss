@@ -1,3 +1,6 @@
 @import "mixins";
 
-@include fontFace('fontName', 'fontFamilyName');
+@include fontFace('roboto-regular', 'Roboto Regular');
+@include fontFace('roboto-bold', 'Roboto Bold');
+@include fontFace('roboto-black', 'Roboto Black');
+@include fontFace('roboto-medium', 'Roboto Medium');
