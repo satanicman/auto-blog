@@ -1,0 +1,35 @@
+@import "../partials/variables";
+.search {
+    &-block {
+        padding-top: 11px;
+    }
+    &-form {
+        position: relative;
+        &--input {
+            background-color: transparent;
+            border: $bdBase;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            outline: 0;
+            padding: 10px 73px 10px 23px;
+        }
+        &--button {
+            width: 24px;
+            height: 24px;
+            right: 26px;
+            top: 50%;
+            margin-top: -12px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: $bdLightColor;
+            position: absolute;
+            color: $cGreen;
+            font-size: 13px;
+            outline: 0;
+            border: 1px solid $bdGreenColor;
+            box-shadow: 0 -3px 5px rgba(153, 204, 51, 0.25);
+        }
+    }
+}

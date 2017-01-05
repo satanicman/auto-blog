@@ -1,0 +1,124 @@
+@import "../partials/mixins";
+$commentsPadding : 30px;
+.comments {
+    &-block {}
+    &-total {
+        color: rgba($cGrey-l, .8);
+        font-family: "Roboto Medium", serif;
+        font-size: em(14px);
+        line-height: 1;
+        font-weight: 500;
+        padding: 25px $commentsPadding 0;
+        span {
+            display: inline-block;
+            position: relative;
+            padding-right: 15px;
+            &:after {
+                content: '';
+                display: block;
+                border: 6px solid transparent;
+                border-top-color: #BDC6CF;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -3px;
+            }
+        }
+    }
+    &-list {
+        margin: 0;
+    }
+    &-item {
+        display: -webkit-flex;
+        display:  -webkit-box;
+        display:  -ms-flexbox;
+        display:         flex;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        -ms-flex-align: start;
+        border-bottom: $bdBase;
+        padding: 15px $commentsPadding 0;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+    &-icon {
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        background: #06C linear-gradient(to top, #00B203 0%, #8BD400 100%);
+        position: relative;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        .icon {
+            position: absolute;
+            left: 50%;
+            margin-left: -12px;
+            bottom: -1px;
+        }
+    }
+    &-text {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        padding-left: 12px;
+        &--title {
+            display: -webkit-flex;
+            display:  -webkit-box;
+            display:  -ms-flexbox;
+            display:         flex;
+            font-size: em(14px);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        &--name {
+            color: $cGrey;
+            font-family: "Roboto Medium", serif;
+            font-weight: 500;
+        }
+        &--time {
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            color: $cGrey-l;
+            font-weight: 400;
+            padding-left: 10px;
+        }
+        &--comment {
+            line-height: 1;
+        }
+    }
+    &-more {
+        margin: 10px auto 20px;
+        display: block;
+    }
+    &-form {
+        .form-group {
+            position: relative;
+            margin: 0;
+        }
+        &--input {
+            border-width: 2px;
+        }
+        &--btn {
+            outline: 0;
+            color: $cGrey;
+            position: absolute;
+            right: 17px;
+            top: 50%;
+            padding: 0;
+            margin-top: -11px;
+            background-color: transparent;
+            border: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}

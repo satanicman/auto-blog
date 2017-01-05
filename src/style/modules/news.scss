@@ -1,0 +1,38 @@
+@import "../partials/mixins";
+.news {
+    &-list {
+        margin: 0;
+        padding-right: 30px;
+    }
+    &-item {
+        margin: 10px 0;
+        padding: 10px 0;
+        border: $bdBase;
+        border-radius: 4px;
+    }
+    &-img {
+        padding-right: 30px;
+        img {
+            width: 100%;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+        }
+    }
+    &-text {
+        padding-left: 0;
+        &--title {
+            font-family: $ffTitleMain;
+            font-size: em(18px);
+            line-height: em(22px, 18px);
+            padding: 0;
+            margin: 0 0 10px;
+        }
+        &--content {
+            font-size: em(14px);
+            line-height: em(18px, 14px);
+            font-family: "OpenSans", serif;
+            margin: 0;
+        }
+    }
+}

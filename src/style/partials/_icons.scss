@@ -1,8 +1,17 @@
-// @import "sprite";
+ @import "sprite";
 
-.icon {
-	display: inline-block;
-}
-// .exepmle-icon {
-// 	@include sprite($exepmle-icon);
-// }
+ .chevron-blue-left-icon {
+ 	@include sprite($chevron-blue-left-icon);
+ }
+ .chevron-blue-right-icon {
+ 	@include sprite($chevron-blue-right-icon);
+ }
+ .tire-icon {
+ 	@include sprite($tire-icon);
+ }
+ .up-icon {
+ 	@include sprite($up-icon);
+ }
+ .user-icon {
+ 	@include sprite($user-icon);
+ }
