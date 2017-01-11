@@ -1,0 +1,42 @@
+<div class="content--top col-sm-12">
+    @@if (topTabs === true) {
+        <div class="tabs-top">
+            <ul class="nav nav-tabs">
+                @@include('pages/@@name/@@name-top.html')
+            </ul>
+        </div>
+    }
+    <div class="clearfix column-wrap row">
+        @@if (leftColumn > 0) {
+            <div class="column-left col-sm-@@leftColumn">
+                <div class="blockleftmenu">
+                    @@include('pages/@@name/@@name-left.html')
+                </div>
+            </div>
+        }
+        <div class="column-center col-sm-@@centerColumn">
+            @@if (topTabs === true) {<div class="tab-content">}
+            @@include('pages/@@name/@@name-content.html')
+            @@if (topTabs === true) {</div>}
+        </div>
+        @@if (rightColumn > 0) {
+            <div class="column-right col-sm-@@rightColumn">
+                <div class="b-right"><img src="img/b/right_1.jpg" alt="right image"></div>
+                <div class="b-right"><img src="img/b/right_2.jpg" alt="right image"></div>
+            </div>
+        }
+    </div>
+    <div class="b-bottom clearfix">
+        <img src="img/b/under.jpg" alt="img under" class="img-responsive">
+        <img src="img/b/under.jpg" alt="img under" class="img-responsive">
+        <img src="img/b/under.jpg" alt="img under" class="img-responsive">
+    </div>
+    @@if (pagination === true) {
+        @@include('pagination.html')
+    }
+</div> <!-- content--top #END -->
+<div class="content--bottom clearfix">
+    @@if (comments === true) {
+        @@include('comments.html', {"count" : 5, "commentsCount" : 32})
+    }
+</div>

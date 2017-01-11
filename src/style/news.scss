@@ -1,4 +1,11 @@
-@import "../partials/mixins";
+@import "partials/mixins";
+#news {
+    .content {
+        &--top {
+            padding-top: 0;
+        }
+    }
+}
 .news {
     &-list {
         margin: 0;

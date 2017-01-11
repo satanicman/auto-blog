@@ -131,6 +131,8 @@ textarea.form-control {}
 // content
 .content {
 	&--top {
+        padding-top: 20px;
+		float: none;
 		background-color: $bgLight;
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
 	}
@@ -386,6 +388,8 @@ textarea.form-control {}
 // pagination #END
 // column
 .column {
+	&-wrap {
+	}
 	&-right {
 		padding-left: 0;
 	}
