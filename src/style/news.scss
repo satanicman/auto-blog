@@ -32,28 +32,7 @@
         &--header {
             margin-bottom: 10px;
         }
-        &--info {
-            font-size: em(12px);
-            font-family: "OpenSans Semibold", serif;
-            color: $cGrey-l;
-            //color: #828C99;
-            padding-right: 0;
-            padding-left: 0;
-            line-height: 1;
-            &-content {
-                white-space: nowrap;
-                display: inline-block;
-                vertical-align: middle;
-            }
-            .icon {
-                vertical-align: middle;
-                margin-right: 2px;
-            }
-            &-value {
-                display: inline-block;
-                vertical-align: middle;
-            }
-        }
+
         &--title {
             font-family: $ffTitleMain;
             font-size: em(18px);

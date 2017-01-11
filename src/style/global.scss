@@ -28,11 +28,6 @@ a {
 	color: $cBase;
 }
 
-p {
-    font-size: em(14px);
-    color: $cDark;
-}
-
 input, textarea {
 	&::-webkit-input-placeholder {color: $cPlaceholder;}
 	&::-moz-placeholder          {color: $cPlaceholder;}
@@ -503,3 +498,60 @@ textarea.form-control {}
     }
 }
 //brands #END
+// page
+.page {
+    &-header {
+        margin: 0 0 10px;
+        padding: 0;
+        border: 0;
+        @extend .clearfix;
+        &--title {
+            @extend .col-sm-7;
+            margin-bottom: 0;
+        }
+        &--info {
+            @extend .col-sm-5;
+            font-size: em(12px);
+            font-family: "OpenSans Semibold", serif;
+            color: $cGrey-l;
+            //color: #828C99;
+            padding-right: 0;
+            padding-left: 0;
+            line-height: 1;
+            &-content {
+                white-space: nowrap;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .icon {
+                vertical-align: middle;
+                margin-right: 2px;
+            }
+            &-value {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    &-text {
+        font-size: em(14px);
+        color: $cDark;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+    &-quote {
+        padding-left: 15px;
+        border-left: 6px solid #18709D;
+        margin: 25px 0 15px;
+        font-family: $ffTitleMain;
+    }
+    &-image {
+        margin-bottom: 35px;
+        margin-top: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
+// page #END
