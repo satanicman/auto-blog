@@ -148,7 +148,7 @@ textarea.form-control {}
 		> li {
 			position: relative;
 			text-align: center;
-			width: 14.2857%;
+			width: 12.5%;
 			padding: 0 5px;
 			float: left;
 			-webkit-flex-shrink: 0;
@@ -277,6 +277,9 @@ textarea.form-control {}
 	&-right {
 		box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.15);
 	}
+    &-left {
+
+    }
 }
 //banners #END
 // tabs
@@ -518,6 +521,7 @@ textarea.form-control {}
             padding-right: 0;
             padding-left: 0;
             line-height: 1;
+            text-align: right;
             &-content {
                 white-space: nowrap;
                 display: inline-block;
