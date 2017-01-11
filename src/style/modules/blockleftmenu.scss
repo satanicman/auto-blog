@@ -1,0 +1,96 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+.blockleftmenu {
+    > ul {
+        border: 2px solid $bdBlue;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        > li {
+            position: relative;
+            &.parent {
+                &:after {
+                    content: '';
+                    display: block;
+                    border-style: solid;
+                    border-width: 6px 3px;
+                    border-color: transparent;
+                    border-top-color: $bdBlue;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    margin-top: -3px;
+                }
+            }
+            &:hover {
+                background-color: $bgBlue;
+                &.parent {
+                    &:after {
+                        border-width: 3px 6px;
+                        border-left-color: $bdLightColor;
+                        right: 4px;
+                    }
+                    > ul {
+                        display: block;
+                    }
+                }
+                > a {
+                    color: $cLight;
+                }
+            }
+            > a {
+                font-size: em(14px);
+                color: $cDark;
+                padding: 10px 20px 10px 10px;
+            }
+            > ul {
+                position: absolute;
+                left: calc(100% + 2px);
+                top: 0;
+                min-width: 310px;
+                border: 1px solid #18709D;
+                padding: 7px 25px;
+                &:before {
+                    opacity: 0.95;
+                    background: #2196F3 linear-gradient(to top, #ADADAD 0%, #ADADAD 1%, #F5F4F4 100%, #F5F4F4 100%);
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                }
+                > li {
+					padding: 4px 0;
+					border-bottom: 1px solid $bdDarkColor;
+                    position: relative;
+                    z-index: 2;
+					&:last-of-type {
+						border-bottom: none;
+					}
+                    > a {
+						&:hover {
+							color: $cDark;
+							font-family: $ffTitleMain;
+							text-decoration: underline;
+						}
+
+                    }
+                }
+            }
+        }
+        ul {
+            display: none;
+            margin: 0;
+        }
+        a {
+            display: block;
+            line-height: 1;
+            font-weight: 400;
+        }
+    }
+}

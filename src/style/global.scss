@@ -28,6 +28,11 @@ a {
 	color: $cBase;
 }
 
+p {
+    font-size: em(14px);
+    color: $cDark;
+}
+
 input, textarea {
 	&::-webkit-input-placeholder {color: $cPlaceholder;}
 	&::-moz-placeholder          {color: $cPlaceholder;}
@@ -42,7 +47,9 @@ input, textarea {
 	margin: 0;
 	&--main {
 		font-family: $ffTitleMain;
-		font-size: em(24px);
+		font-size: em(18px);
+        color: $cDark;
+        margin-bottom: 10px;
 	}
 	&--sub {
 		font-family: $ffTitleSub;
@@ -389,7 +396,11 @@ textarea.form-control {}
 // column
 .column {
 	&-wrap {
+        padding-bottom: 30px;
 	}
+	&-left {
+        padding-right: 0;
+    }
 	&-right {
 		padding-left: 0;
 	}
@@ -467,3 +478,28 @@ textarea.form-control {}
 	}
 }
 // footer #END
+//brands
+.brands-list {
+    margin-bottom: 20px;
+    &--item {
+        text-align: center;
+        padding: 10px;
+    }
+    &--text {
+        color: #456381;
+        font-family: "OpenSans Semibold", serif;
+        font-size: em(14px);
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &--img {
+        border: 1px solid #E8EAE8;
+        background-color: #E2E8EB;
+        margin-bottom: 10px;
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+//brands #END
