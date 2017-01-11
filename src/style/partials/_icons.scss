@@ -15,3 +15,12 @@
  .user-icon {
  	@include sprite($user-icon);
  }
+ .eye-icon {
+ 	@include sprite($eye-icon);
+ }
+ .chat-icon {
+ 	@include sprite($chat-icon);
+ }
+ .clock-icon {
+ 	@include sprite($clock-icon);
+ }
