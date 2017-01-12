@@ -1,18 +1,18 @@
 <div class="content--top col-sm-12">
-    @@if (topTabs === true) {
         <div class="tabs-top">
-            <ul class="nav nav-tabs">
-                @@include('pages/@@name/@@name-top.html')
-            </ul>
+            @@if (topTabs === true) {
+                <ul class="nav nav-tabs">
+                    @@include('pages/@@name/@@name-top.html')
+                </ul>
+            }
         </div>
-    }
     <div class="clearfix column-wrap row">
         @@if (leftColumn > 0) {
             <div class="column-left col-sm-@@leftColumn">
                 <div class="blockleftmenu">
                     @@include('pages/@@name/@@name-left.html')
                 </div>
-                @@if(name === 'calculator') {
+                @@if(name === 'calculator' || name === 'fuel') {
                     <div class="b-left">
                         <img src="img/b/left.jpg" alt="left image">
                     </div>

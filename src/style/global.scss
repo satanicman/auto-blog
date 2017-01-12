@@ -133,7 +133,6 @@ textarea.form-control {}
 // content
 .content {
 	&--top {
-        padding-top: 20px;
 		float: none;
 		background-color: $bgLight;
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
@@ -284,9 +283,11 @@ textarea.form-control {}
 //banners #END
 // tabs
 .tabs-top {
+	min-height: 20px;
 	.nav-tabs {
 		text-align: center;
 		border: none;
+		margin-bottom: 20px;
 		li {
 			float: none;
 			display: inline-block;
@@ -322,9 +323,6 @@ textarea.form-control {}
 			}
 		}
 	}
-}
-.tab-content {
-	padding-top: 20px;
 }
 // tabs #END
 // pagination

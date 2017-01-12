@@ -1,11 +1,4 @@
 @import "partials/mixins";
-#news {
-    .content {
-        &--top {
-            padding-top: 0;
-        }
-    }
-}
 .news {
     &-list {
         margin: 0;
@@ -16,6 +9,9 @@
         padding: 10px 0;
         border: $bdBase;
         border-radius: 4px;
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
     &-img {
         padding-right: 30px;
