@@ -44,7 +44,7 @@
 			</header>
 			<nav class="horisontal_menu">
 				<ul class="clearfix">
-					<li><a href="#">Новости</a>
+					<li @@if (id === 'news'){ class="active"}><a href="news.html">Новости</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -52,7 +52,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Спорт</a>
+					<li @@if (id === 'sport'){ class="active"}><a href="sport.html">Спорт</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -60,7 +60,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Все об авто</a>
+					<li @@if (id === 'about'){ class="active"}><a href="about.html">Все об авто</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -68,7 +68,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Статистика</a>
+					<li @@if (id === 'statistic'){ class="active"}><a href="statistic.html">Статистика</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -76,7 +76,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Топливо</a>
+					<li @@if (id === 'fuel'){ class="active"}><a href="fuel.html">Топливо</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -84,7 +84,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Шины</a>
+					<li @@if (id === 'tire'){ class="active"}><a href="#">Шины</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -92,7 +92,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Моторные масла</a>
+					<li> @@if (id === 'oil'){ class="active"}<a href="oil.html">Моторные масла</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>
@@ -100,7 +100,7 @@
 							<li><a href="#">Подменю 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Самые<br/>самые</a>
+					<li @@if (id === 'favorite'){ class="active"}><a href="#">Самые<br/>самые</a>
 						<ul>
 							<li><a href="#">Подменю 1</a></li>
 							<li><a href="#">Подменю 2</a></li>

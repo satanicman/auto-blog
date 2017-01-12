@@ -178,11 +178,14 @@ textarea.form-control {}
 				color: $cLight;
 				line-height: 1;
 			}
+			&.active,
 			&:hover {
 				> a {
 					font-size: em(18px);
 					text-decoration: underline;
 				}
+			}
+			&:hover {
 				> ul {
 					display: block;
 				}

@@ -1,5 +1,6 @@
 @import "../partials/variables";
 @import "../partials/mixins";
+
 .blockleftmenu {
     > ul {
         border: 2px solid $bdBlue;
@@ -119,15 +120,17 @@
                     }
                 }
             }
+            &:hover {
+                > ul {
+                    display: block;
+                }
+            }
             &.active,
             &:hover {
                 &.parent {
                     a {
                         &:after {
                         }
-                    }
-                    > ul {
-                        display: block;
                     }
                 }
             }
